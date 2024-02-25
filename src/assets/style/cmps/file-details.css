@@ -1,0 +1,51 @@
+.file-details h1{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+.action-table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-inline:auto ;
+    margin-block-start: 1rem;
+    cursor: pointer;
+    width: 80%;
+}
+
+.action-table thead{
+    background-color:var(--theadClr);
+
+}
+
+.action-table thead td{
+    font-weight: bold;
+}
+
+.action-table td{
+    padding: 0.5rem;
+}
+
+.action-table td .text-area {
+   width: 100%;
+}
+
+.action-table td .km{
+    width:3.5rem;
+}
+
+.action-table td:first-child{
+   width: 2rem;
+}
+
+.action-table td:nth-child(2){
+    width: 5rem;
+ }
+
+ .action-table td:nth-child(3){
+    width: 3rem;
+ }
+
+
+

@@ -1,0 +1,89 @@
+
+.file-index{
+height: 80vh;
+}
+
+img{
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    opacity: 0.5;
+}
+
+.main-table{
+    z-index: 10;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.main-table,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-inline:auto ;
+    margin-block-start: 1rem;
+    cursor: pointer;
+}
+
+.main-thead{
+    background-color:var(--theadClr);
+}
+
+.main-thead td{
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+ .no-cases{
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    z-index: 5;
+ }
+
+.main-table .action:hover{
+    color: var(--clr2)
+}
+
+.add-new-file{
+    margin-block-start: 1rem;
+    margin-inline-start: 50% ;
+    translate: -50%;
+}
+
+.main-table tbody tr:hover{
+    background-color: var(--gray2);
+    transition: 500ms;
+   
+}
+
+
+.add-new-file input{
+    margin-inline-start: 0.3rem;
+}
+
+i{
+    font-size: 0.6rem;
+}
+
+.pagination{
+position: fixed;
+bottom:3rem;
+width: 95%;
+}
+
+.filter{
+    margin-block-start: 1rem;
+   margin-inline-start: 50%;
+   translate: -50%;
+}
+
+.salary{
+    width: 3rem;
+}
+
+p{
+    margin: 0;
+}
+
+
