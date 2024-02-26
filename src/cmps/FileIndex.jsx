@@ -56,6 +56,7 @@ export function FileIndex({filterBy,setFilterBy}){
         ev.preventDefault()
         try{
             await fileService.addNewFile(newFile)
+            showSuccessMsg('The case successfully added')
             loadFiles()
         }
         catch(err)
