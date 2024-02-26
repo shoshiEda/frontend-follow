@@ -54,6 +54,7 @@ export function FileIndex({filterBy,setFilterBy}){
 
     async function onAddNewFile(ev){
         ev.preventDefault()
+        if(!newFile.FileNumber) return
         try{
             await fileService.addNewFile(newFile)
             showSuccessMsg('The case successfully added')
