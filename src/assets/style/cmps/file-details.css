@@ -47,5 +47,46 @@
     width: 3rem;
  }
 
+ .modal{
+    position: absolute;
+    inset:0;
+    width:740px;
+    background-color: white;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .modal .cell{
+    margin: 2rem;
+    width: 50%;
+    height:30%;
+ }
+
+ .modal button i{
+    font-size: 2rem;
+ }
+
+ 
+
+ @media (max-width: 720px){
+    .action.big{
+        display: none;
+    }
+    .box{
+       border: 1px solid rgb(118, 118, 118);
+       height: 1.5rem;
+       border-radius: 2px;
+    }
+
+}
+
+ @media (width> 720px){
+    .action.small{
+        display: none;
+    }
+ }
+
 
 

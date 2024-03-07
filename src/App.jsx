@@ -5,6 +5,8 @@ import { SentCases } from "./pages/SentCases.jsx"
 import { CurrCases } from "./pages/CurrCases.jsx"
 import { Header } from "./cmps/Header.jsx"
 import { FileDetails } from "./cmps/FileDetails.jsx"
+import { ActionPage } from "./cmps/ActionPage.jsx"
+
 
 import './assets/style/main.css'
 

@@ -13,6 +13,9 @@ export function FileDetails(){
     const params = useParams()
     const navigate = useNavigate()
     const [newAction, setNewAction] = useState(fileService.getEmptyAction())
+    const [openModal, setOpenModal] = useState(false)
+    const isBox=newAction.action? '' : 'box'
+
 
     useEffect(() => {
         loadFile()
@@ -113,12 +116,21 @@ export function FileDetails(){
                     <td>{file.action? file.action.length+1 : 1}</td>
                     <td><input type="datetime-local" name="dateTime" onChange={handleChange} /></td>
                     <td><input type="text" name="place" onChange={handleChange} /></td>
-                    <td ><textarea className="text-area" name="action" onChange={handleChange}></textarea></td>
+                    <td><textarea className="text-area action big" name="action" onChange={handleChange}></textarea>
+                      <div className={isBox + " action small"} onClick={()=>setOpenModal(true)}>{newAction.action || ''}</div></td>
                     <td ><input className="km" type="number" name="KM" onChange={handleChange} /></td>
                     <td><button type="submit" onClick={onSaveAction}>Save</button></td>      
 
                 </tr>
             </tbody>
         </table>
+        {openModal && <section className="modal">
+            <textarea className="text-area cell" name="action" value={newAction.action} onChange={handleChange}></textarea>
+            <div className="btns">
+            <button onClick={()=>setOpenModal(false)}><i className="fa-solid fa-rotate-left"></i></button>
+            <button onClick={()=>setOpenModal(false)}><i className="fa-solid fa-circle-chevron-right"></i></button>
+            </div>
+            
+        </section>}
         </section>)
 }
