@@ -47,6 +47,10 @@
     width: 3rem;
  }
 
+ .action-table td:nth-child(4){
+    width: 5rem;
+ }
+
  .modal{
     position: absolute;
     inset:0;
@@ -79,6 +83,11 @@
        height: 1.5rem;
        border-radius: 2px;
     }
+
+    .action.small{
+        width: 15rem;
+    }
+    
 
 }
 

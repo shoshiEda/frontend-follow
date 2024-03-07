@@ -95,7 +95,7 @@ export function FileDetails(){
                     <td>index</td>
                     <td>Date and time</td>
                     <td>Place,City</td>
-                    <td>Action</td>
+                    <td className="action-thead">Action</td>
                     <td className="km">KM</td>
                     <td></td>
                 </tr>
